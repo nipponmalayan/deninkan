@@ -1,4 +1,4 @@
-<p align="right">
+<p align="left">
   <a href="https://www.ibm.com/plex/">
     <img alt="Plex" src="https://github.com/nipponmalayan/deninkan/blob/master/deninkan.png" width="256" />
   </a>
