@@ -1,6 +1,6 @@
 <p align="left">
-  <a href="https://www.ibm.com/plex/">
-    <img alt="Plex" src="https://github.com/nipponmalayan/deninkan/blob/master/deninkan.png" width="256" />
+  <a href="">
+    <img alt="deninkan" src="https://github.com/nipponmalayan/deninkan/blob/master/Source\[Assets]\deninkan.png" width="256" />
   </a>
 </p>
 
