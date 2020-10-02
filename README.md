@@ -1,6 +1,6 @@
 <p align="left">
   <a href="">
-    <img alt="deninkan" src="https://github.com/nipponmalayan/deninkan/blob/master/Source\[Assets]\deninkan.png" width="256" />
+    <img alt="deninkan" src="https://github.com/nipponmalayan/deninkan/blob/master/Source/%5BAssets%5D/deninkan.png" width="256" />
   </a>
 </p>
 
