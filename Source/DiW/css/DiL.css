@@ -1,0 +1,95 @@
+/* deninkan colour palette */
+:root {
+  --DiRED: #eb1941;
+  --DiPINK: #f06987;
+}
+
+body {
+  background-color: white;
+}
+
+/* unvisited link */
+a:link {
+  color: var(--DiRED);
+  font-size: 12pt;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: var(--DiRED);
+  font-size: 12pt;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--DiPINK);
+  font-size: 12pt;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+/* selected link */
+a:active {
+  color: var(--DiPINK);
+  font-size: 12pt;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+/* default font styles */
+h1 {
+  color: var(--DiRED);
+  font-size: 48px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 900;
+  padding-bottom: 8px;
+}
+h2 {
+  color: black;
+  font-size: 48px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 900;
+  padding-bottom: 8px;
+}
+h3 {
+  color: var(--DiRED);
+  font-size: 32px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+h4 {
+  color: black;
+  font-size: 32px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+h5 {
+  color: var(--DiRED);
+  font-size: 24px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+h6 {
+  color: black;
+  font-size: 24px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+p {
+  color: black;
+  font-size: 16px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 400;
+}
