@@ -9,39 +9,38 @@ body {
 }
 
 /* unvisited link */
-a:link {
-  color: var(--DiRED);
-  font-size: 12pt;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-/* visited link */
+li:link,
+li:visited,
+a:link,
 a:visited {
   color: var(--DiRED);
   font-size: 12pt;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 /* mouse over link */
+li:hover,
 a:hover {
   color: var(--DiPINK);
   font-size: 12pt;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
-  text-decoration: line-through;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 /* selected link */
+li:active,
 a:active {
   color: var(--DiPINK);
   font-size: 12pt;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
   text-decoration: line-through;
+  transition: 0.3s ease-in-out;
 }
 
 /* default font styles */

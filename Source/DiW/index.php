@@ -1,10 +1,7 @@
-<?php
-require 'header.php'; ?>
+<?php require './header.html'; ?>
 
-    <main>
-        <p>You are logged out!</p>
-        <p>You are logged in!</p>
-    </main>
+  <main>
+    <p>it's just a prank bro haha.</p>
+  </main>
 
-<?php require 'footer.php';
-?>
+<?php require './footer.html'; ?>

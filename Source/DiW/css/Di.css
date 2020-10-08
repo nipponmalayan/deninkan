@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 7.5%;
+}
+
+.DiNAV_links {
+  list-style: none;
+}
+
+.DiNAV_links li {
+  display: inline-block;
+  padding-right: 32px;
+}
+
+.DiNAV_icons {
+  order: 5;
+  display: flex;
+  justify-content: center;
+  height: 64px;
+}
+
+.DiNAV_menu {
+  display: none;
+}
+
+.DiNAV_logo {
+  opacity: 100%;
+  padding-left: 32px;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .DiNAV_links {
+    z-index: -1;
+    opacity: 0%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DiPINK);
+    transition: 0.5s ease-in-out;
+  }
+
+  .DiNAV_links li {
+    padding-right: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .DiNAV_links a:link,
+  a:visited {
+    color: white;
+  }
+
+  .DiNAV_links a:hover,
+  a:active {
+    color: var(--DiPINK);
+  }
+
+  .DiNAV_menu {
+    display: block;
+    cursor: pointer;
+    animation: xtocross 0.5s ease-in-out 0s reverse;
+  }
+
+  @keyframes xtocross {
+    75% {
+      transform: translateX(96px);
+    }
+    100% {
+      transform: translateX(96px) rotate(45deg);
+    }
+  }
+}
+
+.DiNAV_menu-fadein {
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.DiNAV_menu-fadeout {
+  opacity: 0%;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.DiNAV_menu-transform {
+  animation: crosstox 0.5s ease-in-out 0s forwards;
+}
+
+@keyframes crosstox {
+  75% {
+    transform: translateX(96px);
+  }
+  100% {
+    transform: translateX(96px) rotate(45deg);
+  }
+}
