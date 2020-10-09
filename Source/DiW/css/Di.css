@@ -21,9 +21,7 @@ header {
 }
 
 .DiNAV_icons {
-  order: 5;
   display: flex;
-  justify-content: center;
   height: 64px;
 }
 
@@ -68,11 +66,13 @@ header {
   .DiNAV_links a:link,
   a:visited {
     color: white;
+    font-size: 32px;
   }
 
   .DiNAV_links a:hover,
   a:active {
     color: var(--DiPINK);
+    font-size: 32px;
   }
 
   .DiNAV_menu {
