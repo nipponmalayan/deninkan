@@ -1,3 +1,30 @@
+/*+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++
++++.                                        +++.
+.+++                                        .+++
++++.        DDD.    NNN.    NNN.    AAA.    +++.
+.+++        DDD.    NNN.    NNN.    AAA.    .+++
++++.    DDD.    NNN.    NNN.    AAA.        +++.
+.+++    DDD.    NNN.    NNN.    AAA.        .+++
++++.        DDD.NNN.NNN.NNN.NNN.            +++.
+.+++        DDD.NNN.NNN.NNN.NNN.            .+++
++++.            NNN.    NNN.        AAA.    +++.
+.+++            NNN.    NNN.        AAA.    .+++
++++.        EEE.    III.    KKK.    NNN.    +++.
+.+++        EEE.    III.    KKK.    NNN.    .+++
++++.    EEE.    III.    KKK.    NNN.        +++.
+.+++    EEE.    III.    KKK.    NNN.        .+++
++++.        EEE.III.    KKK.    NNN.NNN.    +++.
+.+++        EEE.III.    KKK.    NNN.NNN.    .+++
++++.        EEE.    III.KKK.KKK.NNN.        +++.
+.+++        EEE.    III.KKK.KKK.NNN.        .+++
++++.                                        +++.
+.+++                                        .+++
++++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+*/
+
+/* Licensed under CC-BY-NC-SA-4.0 */
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -26,13 +53,14 @@ header {
 }
 
 .DiNAV_menu {
+  transform: translateX(11px);
   display: none;
 }
 
 .DiNAV_logo {
   opacity: 100%;
   padding-left: 32px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 720px) {
@@ -54,7 +82,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--DiPINK);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   .DiNAV_links li {
@@ -78,7 +106,7 @@ header {
   .DiNAV_menu {
     display: block;
     cursor: pointer;
-    animation: xtocross 0.5s ease-in-out 0s reverse;
+    animation: xtocross 0.3s ease-in-out 0s reverse;
   }
 
   @keyframes xtocross {
@@ -93,18 +121,18 @@ header {
 
 .DiNAV_menu-fadein {
   opacity: 100%;
-  transition: 0.5s ease-in-out;
-  transition-delay: 0.4s;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.2s;
 }
 
 .DiNAV_menu-fadeout {
   opacity: 0%;
   z-index: -1;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .DiNAV_menu-transform {
-  animation: crosstox 0.5s ease-in-out 0s forwards;
+  animation: crosstox 0.3s ease-in-out 0s forwards;
 }
 
 @keyframes crosstox {
