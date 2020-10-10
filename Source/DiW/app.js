@@ -4,9 +4,9 @@ const menuFade = () => {
   const logo = document.querySelector('.DiNAV_logo')
 
   cross.addEventListener('click', () => {
-    logo.classList.toggle('DiNAV_menu-fadeout')
     cross.classList.toggle('DiNAV_menu-transform')
     nav.classList.toggle('DiNAV_menu-fadein')
+    logo.classList.toggle('DiNAV_menu-fadeout')
   })
 }
 menuFade()

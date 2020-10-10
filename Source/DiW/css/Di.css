@@ -60,7 +60,7 @@ header {
 .DiNAV_logo {
   opacity: 100%;
   padding-left: 32px;
-  transition: 0.3s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 @media screen and (max-width: 720px) {
@@ -81,7 +81,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--DiPINK);
+    background-color: var(--DiRED);
     transition: 0.3s ease-in-out;
   }
 
@@ -109,11 +109,18 @@ header {
     animation: xtocross 0.3s ease-in-out 0s reverse;
   }
 
+  .DiNAV_logo {
+    z-index: 1;
+    background-color: white;
+  }
+
   @keyframes xtocross {
     75% {
+      filter: grayscale(0%) invert(0%);
       transform: translateX(96px);
     }
     100% {
+      filter: grayscale(100%) brightness(0%) invert(100%);
       transform: translateX(96px) rotate(45deg);
     }
   }
@@ -122,24 +129,27 @@ header {
 .DiNAV_menu-fadein {
   opacity: 100%;
   transition: 0.3s ease-in-out;
-  transition-delay: 0.2s;
+  transition-delay: 0.3s;
 }
 
 .DiNAV_menu-fadeout {
+  z-index: -2;
+  background-color: none;
   opacity: 0%;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 .DiNAV_menu-transform {
-  animation: crosstox 0.3s ease-in-out 0s forwards;
+  animation: crosstox 0.3s ease-in-out 0.15s forwards;
 }
 
 @keyframes crosstox {
   75% {
+    filter: grayscale(0%) invert(0%);
     transform: translateX(96px);
   }
   100% {
+    filter: grayscale(100%) brightness(0%) invert(100%);
     transform: translateX(96px) rotate(45deg);
   }
 }
