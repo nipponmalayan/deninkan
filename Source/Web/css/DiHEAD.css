@@ -38,26 +38,26 @@ header {
   padding: 32px 7.5%;
 }
 
-.DiNAV_links {
+.DiHEAD-NAV_links {
   list-style: none;
 }
 
-.DiNAV_links li {
+.DiHEAD-NAV_links li {
   display: inline-block;
   padding-right: 32px;
 }
 
-.DiNAV_icons {
+.DiHEAD-NAV_icons {
   display: flex;
   height: 64px;
 }
 
-.DiNAV_menu {
+.DiHEAD-NAV_menu {
   transform: translateX(11px);
   display: none;
 }
 
-.DiNAV_logo {
+.DiHEAD-NAV_logo {
   opacity: 100%;
   padding-left: 32px;
   transition: 0.6s ease-in-out;
@@ -69,7 +69,7 @@ header {
     align-items: flex-start;
   }
 
-  .DiNAV_links {
+  .DiHEAD-NAV_links {
     z-index: -1;
     opacity: 0%;
     position: absolute;
@@ -85,31 +85,31 @@ header {
     transition: 0.3s ease-in-out;
   }
 
-  .DiNAV_links li {
+  .DiHEAD-NAV_links li {
     padding-right: 0px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  .DiNAV_links a:link,
+  .DiHEAD-NAV_links a:link,
   a:visited {
     color: white;
     font-size: 32px;
   }
 
-  .DiNAV_links a:hover,
+  .DiHEAD-NAV_links a:hover,
   a:active {
     color: var(--DiPINK);
     font-size: 32px;
   }
 
-  .DiNAV_menu {
+  .DiHEAD-NAV_menu {
     display: block;
     cursor: pointer;
     animation: xtocross 0.3s ease-in-out 0s reverse;
   }
 
-  .DiNAV_logo {
+  .DiHEAD-NAV_logo {
     z-index: 1;
     background-color: white;
   }
@@ -126,20 +126,20 @@ header {
   }
 }
 
-.DiNAV_menu-fadein {
+.DiHEAD-NAV_menu-fadein {
   opacity: 100%;
   transition: 0.3s ease-in-out;
   transition-delay: 0.3s;
 }
 
-.DiNAV_menu-fadeout {
+.DiHEAD-NAV_menu-fadeout {
   z-index: -2;
   background-color: none;
   opacity: 0%;
   transition: 0.15s ease-in-out;
 }
 
-.DiNAV_menu-transform {
+.DiHEAD-NAV_menu-transform {
   animation: crosstox 0.3s ease-in-out 0.15s forwards;
 }
 

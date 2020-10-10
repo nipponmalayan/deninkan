@@ -1,4 +1,4 @@
-<!--+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
+/*+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
 .+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++
 +++.                                        +++.
 .+++                                        .+++
@@ -21,21 +21,19 @@
 +++.                                        +++.
 .+++                                        .+++
 +++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
-.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.-->
+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+*/
 
-<!-- Licensed under CC-BY-NC-SA-4.0 -->
+/* Licensed under CC-BY-NC-SA-4.0 */
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-  </head>
-  <body>
-    <script src="" async defer></script>
-  </body>
-</html>
+const menuFade = () => {
+  const cross = document.querySelector('.DiHEAD-NAV_menu')
+  const nav = document.querySelector('.DiHEAD-NAV_links')
+  const logo = document.querySelector('.DiHEAD-NAV_logo')
+
+  cross.addEventListener('click', () => {
+    cross.classList.toggle('DiHEAD-NAV_menu-transform')
+    nav.classList.toggle('DiHEAD-NAV_menu-fadein')
+    logo.classList.toggle('DiHEAD-NAV_menu-fadeout')
+  })
+}
+menuFade();
