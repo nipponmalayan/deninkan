@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: CC-BY-NC-SA-4.0
+// SPDX-License-Identifier: EUPL-1.2
 pragma solidity ^0.5.0;
 
 contract DiB_USER {
