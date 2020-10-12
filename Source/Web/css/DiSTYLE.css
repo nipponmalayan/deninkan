@@ -41,7 +41,7 @@ li:visited,
 a:link,
 a:visited {
   color: var(--DiRED);
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
   text-decoration: none;
@@ -52,7 +52,7 @@ a:visited {
 li:hover,
 a:hover {
   color: var(--DiPINK);
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
   text-decoration: none;
@@ -63,7 +63,7 @@ a:hover {
 li:active,
 a:active {
   color: var(--DiPINK);
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
   text-decoration: line-through;
@@ -115,7 +115,7 @@ h6 {
 }
 p {
   color: black;
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
 }
