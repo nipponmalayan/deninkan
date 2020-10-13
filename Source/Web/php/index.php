@@ -40,12 +40,12 @@
   <link rel="stylesheet" href="../css/DiSTYLE.css" />
 </head>
 
-<body>  
+<body class="DiHOME">  
 <?php include 'DiHEAD.php'; ?>
 
     <section>
       <div class="DiFILL">
-        <h1>bruh.</h1>
+        <h1 class="title">// coming soon (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)</h1>
       </div>
     </section>
 

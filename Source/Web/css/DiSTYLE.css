@@ -38,6 +38,14 @@ body {
   background-color: white;
 }
 
+.DiHOME {
+  background: url('../../[Assets]/BUNKYOKEIHOKU.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 128px);
+}
+
 /* unvisited link */
 li:link,
 li:visited,
@@ -121,4 +129,16 @@ p {
   font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 400;
+}
+
+.DiFILL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 128px 10%;
+  height: calc(100vh - 128px);
+}
+
+.title {
+  width: 75%;
 }
