@@ -33,4 +33,4 @@
       </a>
     </div>
   </header>
-  <script src="../js/header.js"></script>
+  <script src="../js/DiHEAD.js"></script>

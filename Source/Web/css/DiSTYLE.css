@@ -31,19 +31,16 @@
   --DiPINK: #f06987;
 }
 
-* {
-}
-
 body {
   background-color: white;
 }
 
 .DiHOME {
-  background: url('../../[Assets]/BUNKYOKEIHOKU.jpg');
+  background: url('../../[Assets]/testbg.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 128px);
+  height: 100vh;
 }
 
 /* unvisited link */
@@ -131,14 +128,28 @@ p {
   font-weight: 400;
 }
 
+/* twemoji */
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1.25em !important;
+  width: 1.25em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.3em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
 .DiFILL {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 128px 10%;
+  padding: 64px 10%;
   height: calc(100vh - 128px);
 }
 
 .title {
   width: 75%;
+  transform: translateY(-64px);
 }

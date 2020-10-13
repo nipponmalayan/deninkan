@@ -4,7 +4,7 @@
     <nav>
       <ul class="DiFOOT-INFO_socmed">
         <li>
-          <a href="https://nipponmalayan.com">
+          <a href="https://ko-fi.com/nipponmalayan">
             <i class="far fa-heart" style="font-size: 32px;"></i>
           </a>
         </li>
@@ -27,10 +27,8 @@
     </nav>
   </div>
   <div class="DiFOOT-INFO_copyright">
-      <p><b>© 2020-<script>document.write(new Date().getFullYear())</script> Nippon-Malayan Software.
-      </b><br><br>All deninkan related software and code written by Nippon-Malayan Software and its
-      contributors are licensed under the EUPL 1.2 or later. Read the
-      <a href="https://raw.githubusercontent.com/nipponmalayan/deninkan/master/LICENSE">license</a>
-      for more information.</p>
+      <p>🇯🇵 🇲🇾<br><b>© 2020-<script>document.write(new Date().getFullYear())</script> Nippon-Malayan Software.
+      </b></br><br>All software and code written for deninkan by Nippon-Malayan Software and its contributors are licensed under the EUPL 1.2.
+      Read the <a href="https://raw.githubusercontent.com/nipponmalayan/deninkan/master/LICENSE">license</a> for more details.</p>
   </div>
 </footer>
