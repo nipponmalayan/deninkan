@@ -25,7 +25,19 @@
 
 <!-- Licensed under the EUPL-1.2-or-later -->
 
-<link rel="stylesheet" href="../css/DiFOOT.css" />
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/2901699eaf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/DiSTYLE.css" />
+  <link rel="stylesheet" href="../css/DiFOOT.css" />
+</head>
 
 <body>
   <footer>
@@ -66,3 +78,5 @@
     </div>
   </footer>
 </body>
+
+</html>
