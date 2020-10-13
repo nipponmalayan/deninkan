@@ -31,13 +31,6 @@
   padding: 0px;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-  font-size: 16px;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -52,6 +45,13 @@ header {
 .DiHEAD-NAV_links li {
   display: inline-block;
   padding-right: 32px;
+}
+
+.DiHEAD-NAV_links a:link,
+.DiHEAD-NAV_links a:visited,
+.DiHEAD-NAV_links a:hover,
+.DiHEAD-NAV_links a:active {
+  font-size: 16px;
 }
 
 .DiHEAD-NAV_icons {
@@ -77,7 +77,6 @@ header {
   }
 
   .DiHEAD-NAV_links {
-    z-index: -1;
     opacity: 0%;
     position: absolute;
     top: 0px;
@@ -99,13 +98,13 @@ header {
   }
 
   .DiHEAD-NAV_links a:link,
-  a:visited {
+  .DiHEAD-NAV_links a:visited {
     color: white;
     font-size: 32px;
   }
 
   .DiHEAD-NAV_links a:hover,
-  a:active {
+  .DiHEAD-NAV_links a:active {
     color: var(--DiPINK);
     font-size: 32px;
   }

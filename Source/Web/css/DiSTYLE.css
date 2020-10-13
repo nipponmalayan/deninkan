@@ -31,6 +31,9 @@
   --DiPINK: #f06987;
 }
 
+* {
+}
+
 body {
   background-color: white;
 }
@@ -41,9 +44,7 @@ li:visited,
 a:link,
 a:visited {
   color: var(--DiRED);
-  font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
-  font-weight: 400;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
@@ -52,9 +53,7 @@ a:visited {
 li:hover,
 a:hover {
   color: var(--DiPINK);
-  font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
-  font-weight: 400;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
@@ -63,9 +62,7 @@ a:hover {
 li:active,
 a:active {
   color: var(--DiPINK);
-  font-size: 12px;
   font-family: 'Source Han Code JP', monospace;
-  font-weight: 400;
   text-decoration: line-through;
   transition: 0.3s ease-in-out;
 }
@@ -78,6 +75,7 @@ h1 {
   font-weight: 900;
   padding-bottom: 8px;
 }
+
 h2 {
   color: black;
   font-size: 48px;
@@ -85,6 +83,7 @@ h2 {
   font-weight: 900;
   padding-bottom: 8px;
 }
+
 h3 {
   color: var(--DiRED);
   font-size: 32px;
@@ -92,6 +91,7 @@ h3 {
   font-weight: 700;
   padding-bottom: 4px;
 }
+
 h4 {
   color: black;
   font-size: 32px;
@@ -99,6 +99,7 @@ h4 {
   font-weight: 700;
   padding-bottom: 4px;
 }
+
 h5 {
   color: var(--DiRED);
   font-size: 24px;
@@ -106,6 +107,7 @@ h5 {
   font-weight: 700;
   padding-bottom: 2px;
 }
+
 h6 {
   color: black;
   font-size: 24px;
@@ -113,6 +115,7 @@ h6 {
   font-weight: 700;
   padding-bottom: 2px;
 }
+
 p {
   color: black;
   font-size: 12px;
