@@ -41,14 +41,6 @@ body {
   background-color: white;
 }
 
-.DiHOME {
-  background: url('../../[Assets]/test.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
 /* unvisited link */
 li,
 a {
@@ -145,7 +137,14 @@ img.emoji {
   padding: 0 !important;
 }
 
-.DiFILL {
+.DiFULLBG {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.DiFULLBG_content {
   display: flex;
   justify-content: space-between;
   align-items: center;

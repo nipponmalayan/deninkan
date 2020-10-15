@@ -25,15 +25,19 @@
 
 <!-- Licensed under the EUPL-1.2-or-later -->
 
+<?php include 'BG_WIP.php'; ?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title></title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
   <script>
@@ -48,10 +52,19 @@
 
     </script>
   <script src="https://kit.fontawesome.com/2901699eaf.js" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+  .DiFULLBG {
+  background: url(<?php echo $selectedBg; ?>) no-repeat;
+  }
+  </style>
+
   <link rel="stylesheet" href="../css/DiHEAD.css" />
   <link rel="stylesheet" href="../css/DiFOOT.css" />
   <link rel="stylesheet" href="../css/DiSTYLE.css" />
   <link rel="stylesheet" href="../css/DiLOAD.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+
 </head>
 
 <body>
@@ -60,11 +73,11 @@
   <img src="../../[Assets]/deninkan_emblem-fast.gif" alt="Loading" height="128px">
   </div>
 
-    <div class="DiHOME">
+    <div class="DiFULLBG">
     <?php include 'DiHEAD.php'; ?>
         
-        <div class="DiFILL">
-          <h1 class="title">coming soon</h1>
+        <div class="DiFULLBG_content">
+          <h1 class="title">coming soon<br>近日公開</h1>
         </div>
 
     <?php include 'DiFOOT.php'; ?>
