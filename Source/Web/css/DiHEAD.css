@@ -25,12 +25,6 @@
 
 /* Licensed under the EUPL-1.2-or-later */
 
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -47,11 +41,14 @@ header {
   padding-right: 32px;
 }
 
-.DiHEAD-NAV_links a:link,
-.DiHEAD-NAV_links a:visited,
-.DiHEAD-NAV_links a:hover,
-.DiHEAD-NAV_links a:active {
-  font-size: 16px;
+h6.DiHEAD-NAV_link {
+  transition: 0.3s ease-in-out;
+}
+
+h6.DiHEAD-NAV_link:hover,
+h6.DiHEAD-NAV_link:active {
+  color: var(--DiPINK);
+  transition: 0.3s ease-in-out;
 }
 
 .DiHEAD-NAV_icons {
@@ -76,9 +73,9 @@ header {
   }
 
   .DiHEAD-NAV_links {
-    z-index: 1;
+    z-index: -2;
     opacity: 0%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     height: 100%;
@@ -97,14 +94,13 @@ header {
     padding-bottom: 32px;
   }
 
-  .DiHEAD-NAV_links a:link,
-  .DiHEAD-NAV_links a:visited {
+  h6.DiHEAD-NAV_link {
     color: white;
     font-size: 32px;
   }
 
-  .DiHEAD-NAV_links a:hover,
-  .DiHEAD-NAV_links a:active {
+  h6.DiHEAD-NAV_link:hover,
+  h6.DiHEAD-NAV_link:active {
     color: var(--DiPINK);
     font-size: 32px;
   }
@@ -124,38 +120,41 @@ header {
   @keyframes xtocross {
     75% {
       filter: grayscale(0%) invert(0%);
-      transform: translateX(96px);
+      transform: translateX(94px);
     }
     100% {
       filter: grayscale(100%) brightness(0%) invert(100%);
-      transform: translateX(96px) rotate(45deg);
+      transform: translateX(94px) rotate(45deg);
     }
   }
 }
 
 .DiHEAD-NAV_menu-fadein {
+  z-index: 1;
   opacity: 100%;
   transition: 0.3s ease-in-out;
   transition-delay: 0.3s;
 }
 
 .DiHEAD-NAV_menu-fadeout {
-  z-index: -2;
+  z-index: -1;
   opacity: 0%;
-  transition: 0.15s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .DiHEAD-NAV_menu-transform {
+  position: fixed;
+  right: calc(10% + 96px);
   animation: crosstox 0.3s ease-in-out 0.15s forwards;
 }
 
 @keyframes crosstox {
   75% {
     filter: grayscale(0%) invert(0%);
-    transform: translateX(96px);
+    transform: translateX(94px);
   }
   100% {
     filter: grayscale(100%) brightness(0%) invert(100%);
-    transform: translateX(96px) rotate(45deg);
+    transform: translateX(94px) rotate(45deg);
   }
 }

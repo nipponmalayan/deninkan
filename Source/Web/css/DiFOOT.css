@@ -25,12 +25,6 @@
 
 /* Licensed under the EUPL-1.2-or-later */
 
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
 footer {
   background-color: black;
   display: flex;

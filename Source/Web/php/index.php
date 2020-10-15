@@ -54,22 +54,21 @@
   <link rel="stylesheet" href="../css/DiLOAD.css" />
 </head>
 
-<body class="DiHOME">
-
+<body>
   <div class="DiLOAD_background"></div>
   <div class="DiLOAD_animation">
   <img src="../../[Assets]/deninkan_emblem-fast.gif" alt="Loading" height="128px">
   </div>
 
+    <div class="DiHOME">
     <?php include 'DiHEAD.php'; ?>
-
-      <section>
+        
         <div class="DiFILL">
-          <h1 class="title">coming soon~<br>🌬💨🍃</h1>
+          <h1 class="title">coming soon</h1>
         </div>
-      </section>
 
     <?php include 'DiFOOT.php'; ?>
+    </div>
 
   <script>
     $(window).on("load", function() {

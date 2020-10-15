@@ -36,4 +36,5 @@ const menuFade = () => {
     logo.classList.toggle('DiHEAD-NAV_menu-fadeout')
   })
 }
+
 menuFade();
