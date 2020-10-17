@@ -1,0 +1,42 @@
+/*+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++
++++.                                        +++.
+.+++                                        .+++
++++.        DDD.    NNN.    NNN.    AAA.    +++.
+.+++        DDD.    NNN.    NNN.    AAA.    .+++
++++.    DDD.    NNN.    NNN.    AAA.        +++.
+.+++    DDD.    NNN.    NNN.    AAA.        .+++
++++.        DDD.NNN.NNN.NNN.NNN.            +++.
+.+++        DDD.NNN.NNN.NNN.NNN.            .+++
++++.            NNN.    NNN.        AAA.    +++.
+.+++            NNN.    NNN.        AAA.    .+++
++++.        EEE.    III.    KKK.    NNN.    +++.
+.+++        EEE.    III.    KKK.    NNN.    .+++
++++.    EEE.    III.    KKK.    NNN.        +++.
+.+++    EEE.    III.    KKK.    NNN.        .+++
++++.        EEE.III.    KKK.    NNN.NNN.    +++.
+.+++        EEE.III.    KKK.    NNN.NNN.    .+++
++++.        EEE.    III.KKK.KKK.NNN.        +++.
+.+++        EEE.    III.KKK.KKK.NNN.        .+++
++++.                                        +++.
+.+++                                        .+++
++++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+*/
+
+/* Licensed under the EUPL-1.2-or-later */
+
+.DiSIGN-UP_form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 256px;
+}
+
+.DiSIGN-UP_form input {
+  display: flex;
+  flex-direction: column;
+}
+
+.DiSIGN-UP_form button {
+  float: right;
+}

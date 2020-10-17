@@ -17,7 +17,7 @@
           </a>
         </li>
         <li>
-          <a href="index.php">
+          <a href="signup.php">
             <h6 class="DiHEAD-NAV_link">[signup]</h6>
           </a>
         </li>

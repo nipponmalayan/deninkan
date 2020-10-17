@@ -29,6 +29,6 @@
   <div class="DiFOOT-INFO_copyright">
       <p>🇯🇵 🇲🇾<br><b>© 2020-<script>document.write(new Date().getFullYear())</script> Nippon-Malayan Software.
       </b></br><br>All software and code written for deninkan by Nippon-Malayan Software and its contributors are licensed under the EUPL 1.2.
-      Read the <a href="https://raw.githubusercontent.com/nipponmalayan/deninkan/master/LICENSE">license</a> for more details.</p>
+      Read the <a href="https://raw.githubusercontent.com/nipponmalayan/deninkan/master/LICENSE"><i>license</i></a> for more details.</p>
   </div>
 </footer>

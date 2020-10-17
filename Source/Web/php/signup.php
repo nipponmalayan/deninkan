@@ -25,8 +25,6 @@
 
 <!-- Licensed under the EUPL-1.2-or-later -->
 
-<?php include 'scripts/DiBG_WIP.php'; ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -54,7 +52,7 @@
   <script src="https://kit.fontawesome.com/2901699eaf.js" crossorigin="anonymous"></script>
 
   <style type="text/css">
-  .DiBG-FULL {
+  .DiFULLBG {
   background: url(<?php echo $selectedBg; ?>) no-repeat;
   }
   </style>
@@ -63,7 +61,7 @@
   <link rel="stylesheet" href="../css/DiFOOT.css" />
   <link rel="stylesheet" href="../css/DiSTYLE.css" />
   <link rel="stylesheet" href="../css/DiLOAD.css" />
-  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/DiSIGN.css" />
 
 </head>
 
@@ -73,15 +71,24 @@
   <img src="../../[Assets]/deninkan_emblem-fast.gif" alt="Loading" height="128px">
   </div>
 
-    <div class="DiBG-FULL">
     <?php include 'elements/DiHEAD.php'; ?>
-        
-        <div class="DiBG-FULL_content">
-          <h1 class="headline">coming soon<br>近日公開</h1>
-        </div>
 
-    <?php include 'elements/DiFOOT.php'; ?>
+    <section>
+    <div class="DiSIGN-UP_form">
+    <h5 class="subtitle">// don't have<br>// an account?<br>// sign up!<br>// it's 🆓✨</h5>
+      <form action="DiSIGN-UP.php" method="post">
+      <input type="text" name="user" placeholder="username">
+      <input type="text" name="email" placeholder="e-mail">
+      <input type="password" name="pwd" placeholder="password">
+      <input type="password" name="pwd_confirm" placeholder="confirm password">
+      <input type="checkbox" name="eula_confirm" id="eula_confirm"
+      class="css-checkbox" /><label for="eula_confirm" class="css-label">You agree to the<br><a href="#"><i>Terms of Service</i></a></label>
+      <button type="submit" name="next">next =></button>
+    </form>
     </div>
+    </section>
+    
+    <?php include 'elements/DiFOOT.php'; ?>
 
   <script>
     $(window).on("load", function() {

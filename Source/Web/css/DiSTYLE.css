@@ -29,6 +29,8 @@
 :root {
   --DiRED: #eb1941;
   --DiPINK: #f06987;
+  --DiGRAY: #c8c8c8;
+  --DiPALE: #fafafa;
 }
 
 * {
@@ -39,6 +41,10 @@
 
 body {
   background-color: white;
+}
+
+section {
+  padding: 64px;
 }
 
 /* unvisited link */
@@ -83,7 +89,7 @@ h2 {
   font-size: 64px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 900;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 h3 {
@@ -99,7 +105,7 @@ h4 {
   font-size: 32px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 700;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 h5 {
@@ -107,7 +113,6 @@ h5 {
   font-size: 24px;
   font-family: 'Source Han Code JP', monospace;
   font-weight: 700;
-  padding-bottom: 2px;
 }
 
 h6 {
@@ -124,6 +129,100 @@ p {
   font-weight: 400;
 }
 
+input,
+input::placeholder {
+  background-color: var(--DiPALE);
+  color: var(--DiGRAY);
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  height: 32px;
+  width: 256px;
+  font-size: 12px;
+  font-family: 'Source Han Code JP', monospace;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+input:focus {
+  border: var(--DiGRAY);
+  color: black;
+}
+
+input[type='checkbox'].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type='checkbox'].css-checkbox + label.css-label {
+  padding-left: 48px;
+  height: 32px;
+  display: inline-block;
+  line-height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type='checkbox'].css-checkbox:checked + label.css-label {
+  background-position: 0 -32px;
+}
+
+label.css-label {
+  background-image: url(../../[Assets]/icons/checkmark.png);
+  background-size: 32px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  cursor: pointer;
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  color: var(--DiPINK);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+button:active {
+  color: var(--DiPINK);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: line-through;
+  transition: 0.3s ease-in-out;
+}
+
 /* twemoji */
 img.emoji {
   display: inline !important;
@@ -137,14 +236,15 @@ img.emoji {
   padding: 0 !important;
 }
 
-.DiFULLBG {
+.DiBG-FULL {
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
-.DiFULLBG_content {
+.DiBG-FULL_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,7 +252,15 @@ img.emoji {
   height: calc(100vh - 128px);
 }
 
-.title {
+.headline {
   width: 100%;
   transform: translateY(-64px);
+}
+
+.title {
+  padding-bottom: 32px;
+}
+
+.subtitle {
+  padding-bottom: 16px;
 }
