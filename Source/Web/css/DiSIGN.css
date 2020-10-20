@@ -25,10 +25,20 @@
 
 /* Licensed under the EUPL-1.2-or-later */
 
+.DiSIGN_content {
+  background-color: black;
+
+  padding: 32px 10%;
+
+  height: 100vh;
+  width: 100vw;
+}
+
 .DiSIGN-UP_form {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+
   width: 256px;
 }
 

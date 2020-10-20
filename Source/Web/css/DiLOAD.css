@@ -26,20 +26,23 @@
 /* Licensed under the EUPL-1.2-or-later */
 
 .DiLOAD_background {
-  z-index: 6;
   background-color: white;
   position: fixed;
+  z-index: 6;
+
+  top: 0;
+
   width: 100vw;
   height: 100vh;
-  top: 0;
 }
 
 .DiLOAD_animation {
-  z-index: 8;
   position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .DiLOAD_animation img {

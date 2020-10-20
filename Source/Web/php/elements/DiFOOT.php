@@ -1,8 +1,8 @@
 <footer>
-  <div class="DiFOOT-INFO_icons">
-    <div class="DiFOOT-INFO_logo"><img src="../../[Assets]/deninkan.png" alt="Deninkan Logo" height="80px"></div>
+  <div class="DiFOOT_icons">
+    <div class="DiFOOT_logo"><img src="../../[Assets]/deninkan.png" alt="Deninkan Logo" height="80px"></div>
     <nav>
-      <ul class="DiFOOT-INFO_socmed">
+      <ul class="DiFOOT_socmed">
         <li>
           <a href="https://ko-fi.com/nipponmalayan">
             <i class="far fa-heart" style="font-size: 32px;"></i>
@@ -26,9 +26,9 @@
       </ul>
     </nav>
   </div>
-  <div class="DiFOOT-INFO_copyright">
-      <p>🇯🇵 🇲🇾<br><b>© 2020-<script>document.write(new Date().getFullYear())</script> Nippon-Malayan Software.
-      </b></br><br>All software and code written for deninkan by Nippon-Malayan Software and its contributors are licensed under the EUPL 1.2.
+  <div class="DiFOOT_copyright">
+      <p>© 2020-<script>document.write(new Date().getFullYear())</script> Dipapansembilan Studio.
+      </b></br><br>All software and code written for Deninkan by Dipapansembilan Studio and its contributors are licensed under the EUPL 1.2.
       Read the <a href="https://raw.githubusercontent.com/nipponmalayan/deninkan/master/LICENSE"><i>license</i></a> for more details.</p>
   </div>
 </footer>

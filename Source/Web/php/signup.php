@@ -57,11 +57,9 @@
   }
   </style>
 
-  <link rel="stylesheet" href="../css/DiHEAD.css" />
-  <link rel="stylesheet" href="../css/DiFOOT.css" />
   <link rel="stylesheet" href="../css/DiSTYLE.css" />
   <link rel="stylesheet" href="../css/DiLOAD.css" />
-  <link rel="stylesheet" href="../css/DiSIGN.css" />
+  <link rel="stylesheet" href="../css/DiSIGN.css" />  
 
 </head>
 
@@ -71,8 +69,15 @@
   <img src="../../[Assets]/deninkan_emblem-fast.gif" alt="Loading" height="128px">
   </div>
 
-    <?php include 'elements/DiHEAD.php'; ?>
+  <header style="justify-content: flex-end">
+    <div class="DiHEAD-NAV_icons">
+      <a href="index.php" class="DiHEAD-NAV_logo">
+          <img src="../../[Assets]/deninkan_emblem.gif" alt="Deninkan Logo" height="64px" />
+      </a>
+    </div>
+  </header>
 
+  <div class="DiBG-FULL_content">  
     <section>
     <div class="DiSIGN-UP_form">
     <h5 class="subtitle">// don't have<br>// an account?<br>// sign up!<br>// it's 🆓✨</h5>
@@ -81,14 +86,14 @@
       <input type="text" name="email" placeholder="e-mail">
       <input type="password" name="pwd" placeholder="password">
       <input type="password" name="pwd_confirm" placeholder="confirm password">
-      <input type="checkbox" name="eula_confirm" id="eula_confirm"
-      class="css-checkbox" /><label for="eula_confirm" class="css-label">You agree to the<br><a href="#"><i>Terms of Service</i></a></label>
+      <input type="checkbox" name="tos_confirm" id="tos_confirm"
+      class="css-checkbox" /><label for="tos_confirm" class="css-label">You agree to the<br><a href="https://github.com/nipponmalaya/deninkan/blob/master/TERMS.md"><i>Terms of Service</i></a></label>
       <button type="submit" name="next">next =></button>
     </form>
+    <p class="footnote"><a href="signin.php"><i>already have an account?</i></a></p>
     </div>
     </section>
-    
-    <?php include 'elements/DiFOOT.php'; ?>
+  </div>
 
   <script>
     $(window).on("load", function() {

@@ -59,11 +59,8 @@
   }
   </style>
 
-  <link rel="stylesheet" href="../css/DiHEAD.css" />
-  <link rel="stylesheet" href="../css/DiFOOT.css" />
   <link rel="stylesheet" href="../css/DiSTYLE.css" />
   <link rel="stylesheet" href="../css/DiLOAD.css" />
-  <link rel="stylesheet" href="../css/index.css" />
 
 </head>
 

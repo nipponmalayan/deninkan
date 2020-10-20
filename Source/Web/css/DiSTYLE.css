@@ -35,6 +35,7 @@
 
 * {
   box-sizing: border-box;
+
   margin: 0px;
   padding: 0px;
 }
@@ -47,162 +48,21 @@ section {
   padding: 64px;
 }
 
-/* unvisited link */
-li,
-a {
-  color: var(--DiRED);
-  font-family: 'Source Han Code JP', monospace;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-/* mouse over link */
-li:hover,
-a:hover {
-  color: var(--DiPINK);
-  font-family: 'Source Han Code JP', monospace;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-/* selected link */
-li:active,
-a:active {
-  color: var(--DiPINK);
-  font-family: 'Source Han Code JP', monospace;
-  text-decoration: line-through;
-  transition: 0.3s ease-in-out;
-}
-
-/* default font styles */
-h1 {
-  color: var(--DiRED);
-  font-size: 96px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 900;
-  padding-bottom: 8px;
-  text-align: center;
-}
-
-h2 {
-  color: var(--DiRED);
-  font-size: 64px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 900;
-  padding-bottom: 6px;
-}
-
-h3 {
-  color: var(--DiRED);
-  font-size: 48px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 700;
-  padding-bottom: 4px;
-}
-
-h4 {
-  color: var(--DiRED);
-  font-size: 32px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 700;
-  padding-bottom: 2px;
-}
-
-h5 {
-  color: var(--DiRED);
-  font-size: 24px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 700;
-}
-
-h6 {
-  color: var(--DiRED);
-  font-size: 16px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 700;
-}
-
-p {
-  color: black;
-  font-size: 12px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 400;
-}
-
-input,
-input::placeholder {
-  background-color: var(--DiPALE);
-  color: var(--DiGRAY);
-  border: none;
-  border-radius: 8px;
-  padding: 8px;
-  height: 32px;
-  width: 256px;
-  font-size: 12px;
-  font-family: 'Source Han Code JP', monospace;
-  font-weight: 400;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-input:focus {
-  border: var(--DiGRAY);
-  color: black;
-}
-
-input[type='checkbox'].css-checkbox {
-  position: absolute;
-  z-index: -1000;
-  left: -1000px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
-input[type='checkbox'].css-checkbox + label.css-label {
-  padding-left: 48px;
-  height: 32px;
-  display: inline-block;
-  line-height: 18px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 8px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-input[type='checkbox'].css-checkbox:checked + label.css-label {
-  background-position: 0 -32px;
-}
-
-label.css-label {
-  background-image: url(../../[Assets]/icons/checkmark.png);
-  background-size: 32px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 button {
   background: none;
   border: none;
-  margin: 0;
-  padding: 0;
-  height: 32px;
-  cursor: pointer;
   color: var(--DiRED);
+  cursor: pointer;
   font-family: 'Source Han Code JP', monospace;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+
+  margin: 0;
+  padding: 0;
+
+  height: 32px;
 }
 
 button:hover {
@@ -223,38 +83,160 @@ button:active {
   transition: 0.3s ease-in-out;
 }
 
-/* twemoji */
-img.emoji {
-  display: inline !important;
-  border: none !important;
-  box-shadow: none !important;
-  height: 1.25em !important;
-  width: 1.25em !important;
-  margin: 0 0.07em !important;
-  vertical-align: -0.3em !important;
-  background: none !important;
-  padding: 0 !important;
+input,
+input::placeholder {
+  background-color: var(--DiPALE);
+  border: none;
+  border-radius: 8px;
+  color: var(--DiGRAY);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 12px;
+  font-weight: 400;
+
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 8px;
+
+  height: 32px;
+  width: 256px;
 }
 
-.DiBG-FULL {
-  background-color: black;
-  background-position: center;
+input:focus {
+  border: var(--DiGRAY);
+  color: black;
+}
+
+input[type='checkbox'].css-checkbox {
+  border: 0;
+  clip: rect(0 0 0 0);
+  left: -1000px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1000;
+
+  margin: -1px;
+  padding: 0;
+
+  height: 1px;
+  width: 1px;
+}
+
+input[type='checkbox'].css-checkbox + label.css-label {
+  background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 8px;
+  line-height: 18px;
+  vertical-align: middle;
+
+  padding-left: 48px;
+
+  height: 32px;
 }
 
-.DiBG-FULL_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 64px 10%;
-  height: calc(100vh - 128px);
+input[type='checkbox'].css-checkbox:checked + label.css-label {
+  background-position: 0 -32px;
+}
+
+label.css-label {
+  background-image: url(../../[Assets]/icons/checkmark.png);
+  background-size: 32px;
+
+  user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+li,
+a {
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+li:hover,
+a:hover {
+  color: var(--DiPINK);
+  font-family: 'Source Han Code JP', monospace;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+li:active,
+a:active {
+  color: var(--DiPINK);
+  font-family: 'Source Han Code JP', monospace;
+  text-decoration: line-through;
+  transition: 0.3s ease-in-out;
+}
+
+h1 {
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 96px;
+  font-weight: 900;
+  text-align: center;
+
+  padding-bottom: 8px;
+}
+
+h2 {
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 64px;
+  font-weight: 900;
+
+  padding-bottom: 6px;
+}
+
+h3 {
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 48px;
+  font-weight: 700;
+
+  padding-bottom: 4px;
+}
+
+h4 {
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 32px;
+  font-weight: 700;
+
+  padding-bottom: 2px;
+}
+
+h5 {
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h6 {
+  color: var(--DiRED);
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+p {
+  color: black;
+  font-family: 'Source Han Code JP', monospace;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .headline {
-  width: 100%;
   transform: translateY(-64px);
+
+  width: 100%;
 }
 
 .title {
@@ -263,4 +245,267 @@ img.emoji {
 
 .subtitle {
   padding-bottom: 16px;
+}
+
+.footnote {
+  text-align: center;
+
+  padding-top: 64px;
+
+  width: 100%;
+}
+
+/* twemoji */
+img.emoji {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: inline !important;
+  vertical-align: -0.3em !important;
+
+  margin: 0 0.07em !important;
+  padding: 0 !important;
+
+  height: 1.25em !important;
+  width: 1.25em !important;
+}
+
+/* DiHEAD */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 32px 10%;
+}
+
+.DiHEAD_links {
+  list-style: none;
+}
+
+.DiHEAD_links li {
+  display: inline-block;
+
+  padding-right: 32px;
+}
+
+h6.DiHEAD_link {
+  transition: 0.3s ease-in-out;
+}
+
+h6.DiHEAD_link:hover,
+h6.DiHEAD_link:active {
+  color: var(--DiPINK);
+  transition: 0.3s ease-in-out;
+}
+
+.DiHEAD_icons {
+  display: flex;
+
+  height: 64px;
+}
+
+.DiHEAD_menu {
+  display: none;
+  transform: translateX(11px);
+}
+
+.DiHEAD_logo {
+  opacity: 100%;
+
+  padding-left: 32px;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .DiHEAD_links {
+    align-items: center;
+    background-color: var(--DiRED);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    z-index: -2;
+
+    top: 0px;
+    right: 0px;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  .DiHEAD_links li {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 0px;
+  }
+
+  h6.DiHEAD_link {
+    color: white;
+    font-size: 32px;
+  }
+
+  h6.DiHEAD_link:hover,
+  h6.DiHEAD_link:active {
+    color: var(--DiPINK);
+    font-size: 32px;
+  }
+
+  .DiHEAD_menu {
+    animation: xtocross 0.3s ease-in-out 0s reverse;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+  }
+
+  .DiHEAD_logo {
+    transition: 0.6s ease-in-out;
+    z-index: 1;
+  }
+
+  @keyframes xtocross {
+    75% {
+      filter: grayscale(0%) invert(0%);
+      transform: translateX(94px);
+    }
+    100% {
+      filter: brightness(0%) grayscale(100%) invert(100%);
+      transform: translateX(94px) rotate(45deg);
+    }
+  }
+}
+
+.DiHEAD_menu-fadein {
+  opacity: 100%;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  z-index: 1;
+}
+
+.DiHEAD_menu-fadeout {
+  opacity: 0%;
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.DiHEAD_menu-transform {
+  animation: crosstox 0.3s ease-in-out 0.15s forwards;
+  position: fixed;
+
+  right: calc(10% + 96px);
+}
+
+@keyframes crosstox {
+  75% {
+    filter: grayscale(0%) invert(0%);
+    transform: translateX(94px);
+  }
+  100% {
+    filter: brightness(0%) grayscale(100%) invert(100%);
+    transform: translateX(94px) rotate(45deg);
+  }
+}
+
+/* DiFOOT */
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 32px 10%;
+}
+
+.DiFOOT_icons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  height: 80px;
+}
+
+.DiFOOT_logo {
+  height: 80px;
+}
+
+.DiFOOT_socmed {
+  list-style: none;
+}
+
+.DiFOOT_socmed li {
+  display: inline-block;
+  justify-items: center;
+
+  padding-left: 32px;
+}
+
+.DiFOOT_copyright {
+  padding-top: 64px;
+
+  width: 100%;
+}
+
+.DiFOOT_copyright p {
+  color: white;
+  float: right;
+  text-align: right;
+  vertical-align: top;
+
+  width: 50%;
+}
+
+@media screen and (max-width: 1080px) {
+  .DiFOOT_copyright p {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .DiFOOT_icons {
+    align-items: flex-start;
+
+    height: 96px;
+  }
+
+  .DiFOOT_socmed {
+    width: 128px;
+  }
+
+  .DiFOOT_socmed li {
+    transform: translateX(24px);
+
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .DiFOOT_copyright p {
+    text-align: center;
+
+    width: 100%;
+  }
+}
+
+.DiBG-FULL {
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.DiBG-FULL_content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  padding: 64px 10%;
+
+  height: calc(100vh - 128px);
 }
