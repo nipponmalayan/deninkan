@@ -25,8 +25,6 @@ DDD.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
 
 <!-- Licensed under the EUPL-1.2-or-later -->
 
-<?php include 'scripts/DiBG_wip.php'; ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -54,7 +52,7 @@ DDD.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
   <script src="https://kit.fontawesome.com/2901699eaf.js" crossorigin="anonymous"></script>
 
   <style type="text/css">
-  .DiBG-FULL {
+  .DiFULLBG {
   background: url(<?php echo $selectedBg; ?>) no-repeat;
   }
   </style>
@@ -69,15 +67,27 @@ DDD.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
   <img src="../../[Assets]/deninkan_emblem-fast.gif" alt="Loading" height="128px">
   </div>
 
-    <div class="DiBG-FULL">
-    <?php include 'elements/DiHEAD.php'; ?>
-        
-        <div class="DiBG-FULL_content">
-          <h1 class="headline">coming soon<br>近日公開</h1>
-        </div>
-
-    <?php include 'elements/DiFOOT.php'; ?>
+  <header style="justify-content: flex-end">
+    <div class="DiHEAD_icons">
+      <a href="index.php" class="DiHEAD_logo">
+          <img src="../../[Assets]/deninkan_emblem.gif" alt="Deninkan Logo" height="64px" />
+      </a>
     </div>
+  </header>
+
+  <div class="DiBG-FULL_content">  
+    <section>
+    <div class="DiFORM_sign">
+    <h5 class="subtitle">// welcome<br>// back! 🥺💕</h5>
+      <form action="scripts/DiFORM_signin.php" method="post">
+      <input type="text" name="uid" placeholder="e-mail / username">
+      <input type="password" name="pwd" placeholder="password">
+      <button type="submit" name="submit">sign in =></button>
+    </form>
+    <p class="footnote"><a href="signup.php"><i>don't have an account?</i></a></p>
+    </div>
+    </section>
+  </div>
 
   <script>
     $(window).on("load", function() {

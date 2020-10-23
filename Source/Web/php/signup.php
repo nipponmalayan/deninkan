@@ -1,27 +1,27 @@
-<!--+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
-.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++
-+++.                                        +++.
-.+++                                        .+++
-+++.        DDD.    NNN.    NNN.    AAA.    +++.
-.+++        DDD.    NNN.    NNN.    AAA.    .+++
-+++.    DDD.    NNN.    NNN.    AAA.        +++.
-.+++    DDD.    NNN.    NNN.    AAA.        .+++
-+++.        DDD.NNN.NNN.NNN.NNN.            +++.
-.+++        DDD.NNN.NNN.NNN.NNN.            .+++
-+++.            NNN.    NNN.        AAA.    +++.
-.+++            NNN.    NNN.        AAA.    .+++
-+++.        EEE.    III.    KKK.    NNN.    +++.
-.+++        EEE.    III.    KKK.    NNN.    .+++
-+++.    EEE.    III.    KKK.    NNN.        +++.
-.+++    EEE.    III.    KKK.    NNN.        .+++
-+++.        EEE.III.    KKK.    NNN.NNN.    +++.
-.+++        EEE.III.    KKK.    NNN.NNN.    .+++
-+++.        EEE.    III.KKK.KKK.NNN.        +++.
-.+++        EEE.    III.KKK.KKK.NNN.        .+++
-+++.                                        +++.
-.+++                                        .+++
-+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
-.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.-->
+<!--EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
+.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.NNN.KKK.AAA.NNN
+DDD.                                        EEE.
+.NNN                                        .III
+NNN.        DDD.    NNN.    NNN.    AAA.    KKK.
+.AAA        DDD.    NNN.    NNN.    AAA.    .NNN
+DDD.    DDD.    NNN.    NNN.    AAA.        EEE.
+.NNN    DDD.    NNN.    NNN.    AAA.        .III
+NNN.        DDD.NNN.NNN.NNN.NNN.            KKK.
+.AAA        DDD.NNN.NNN.NNN.NNN.            .NNN
+DDD.            NNN.    NNN.        AAA.    EEE.
+.NNN            NNN.    NNN.        AAA.    .III
+NNN.        EEE.    III.    KKK.    NNN.    KKK.
+.AAA        EEE.    III.    KKK.    NNN.    .NNN
+DDD.    EEE.    III.    KKK.    NNN.        EEE.
+.NNN    EEE.    III.    KKK.    NNN.        .III
+NNN.        EEE.III.    KKK.    NNN.NNN.    KKK.
+.AAA        EEE.III.    KKK.    NNN.NNN.    .NNN
+DDD.        EEE.    III.KKK.KKK.NNN.        EEE.
+.NNN        EEE.    III.KKK.KKK.NNN.        .III
+NNN.                                        KKK.
+.AAA                                        .NNN
+DDD.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
+.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.NNN.KKK.AAA.-->
 
 <!-- Licensed under the EUPL-1.2-or-later -->
 
@@ -58,8 +58,6 @@
   </style>
 
   <link rel="stylesheet" href="../css/DiSTYLE.css" />
-  <link rel="stylesheet" href="../css/DiLOAD.css" />
-  <link rel="stylesheet" href="../css/DiSIGN.css" />  
 
 </head>
 
@@ -70,8 +68,8 @@
   </div>
 
   <header style="justify-content: flex-end">
-    <div class="DiHEAD-NAV_icons">
-      <a href="index.php" class="DiHEAD-NAV_logo">
+    <div class="DiHEAD_icons">
+      <a href="index.php" class="DiHEAD_logo">
           <img src="../../[Assets]/deninkan_emblem.gif" alt="Deninkan Logo" height="64px" />
       </a>
     </div>
@@ -79,16 +77,16 @@
 
   <div class="DiBG-FULL_content">  
     <section>
-    <div class="DiSIGN-UP_form">
+    <div class="DiFORM_sign">
     <h5 class="subtitle">// don't have<br>// an account?<br>// sign up!<br>// it's 🆓✨</h5>
-      <form action="DiSIGN-UP.php" method="post">
-      <input type="text" name="user" placeholder="username">
+      <form action="scripts/DiFORM_signup.php" method="post">
+      <input type="text" name="uid" placeholder="username">
       <input type="text" name="email" placeholder="e-mail">
       <input type="password" name="pwd" placeholder="password">
       <input type="password" name="pwd_confirm" placeholder="confirm password">
       <input type="checkbox" name="tos_confirm" id="tos_confirm"
       class="css-checkbox" /><label for="tos_confirm" class="css-label">You agree to the<br><a href="https://github.com/nipponmalaya/deninkan/blob/master/TERMS.md"><i>Terms of Service</i></a></label>
-      <button type="submit" name="next">next =></button>
+      <button type="submit" name="submit">next =></button>
     </form>
     <p class="footnote"><a href="signin.php"><i>already have an account?</i></a></p>
     </div>

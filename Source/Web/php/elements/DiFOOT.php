@@ -4,7 +4,7 @@
     <nav>
       <ul class="DiFOOT_socmed">
         <li>
-          <a href="https://ko-fi.com/nipponmalayan">
+          <a href="https://ko-fi.com/nipponmalaya">
             <i class="far fa-heart" style="font-size: 32px;"></i>
           </a>
         </li>
@@ -14,12 +14,12 @@
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/nipponmalayan">
+          <a href="https://twitter.com/nipponmalaya">
             <i class="fab fa-twitter" style="font-size: 32px;"></i>
           </a>
         </li>
         <li>
-          <a href="https://github.com/nipponmalayan/deninkan">
+          <a href="https://github.com/nipponmalaya/deninkan">
             <i class="fab fa-github-alt" style="font-size: 32px;"></i>
           </a>
         </li>
@@ -27,8 +27,8 @@
     </nav>
   </div>
   <div class="DiFOOT_copyright">
-      <p>© 2020-<script>document.write(new Date().getFullYear())</script> Dipapansembilan Studio.
-      </b></br><br>All software and code written for Deninkan by Dipapansembilan Studio and its contributors are licensed under the EUPL 1.2.
-      Read the <a href="https://raw.githubusercontent.com/nipponmalayan/deninkan/master/LICENSE"><i>license</i></a> for more details.</p>
+      <p>© 2020-<script>document.write(new Date().getFullYear())</script> Nippon Malaya, Dipapansembilan Studio.
+      </b><br><br>All software and code written for Deninkan by Nippon Malaya and its contributors are licensed under the EUPL 1.2.
+      Read the <a href="https://github.com/nipponmalaya/deninkan/blob/master/LICENSE"><i>license</i></a> for more details.</p>
   </div>
 </footer>

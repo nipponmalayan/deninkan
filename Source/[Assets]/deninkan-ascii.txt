@@ -1,24 +1,24 @@
-+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
-.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++
-+++.                                        +++.
-.+++                                        .+++
-+++.        DDD.    NNN.    NNN.    AAA.    +++.
-.+++        DDD.    NNN.    NNN.    AAA.    .+++
-+++.    DDD.    NNN.    NNN.    AAA.        +++.
-.+++    DDD.    NNN.    NNN.    AAA.        .+++
-+++.        DDD.NNN.NNN.NNN.NNN.            +++.
-.+++        DDD.NNN.NNN.NNN.NNN.            .+++
-+++.            NNN.    NNN.        AAA.    +++.
-.+++            NNN.    NNN.        AAA.    .+++
-+++.        EEE.    III.    KKK.    NNN.    +++.
-.+++        EEE.    III.    KKK.    NNN.    .+++
-+++.    EEE.    III.    KKK.    NNN.        +++.
-.+++    EEE.    III.    KKK.    NNN.        .+++
-+++.        EEE.III.    KKK.    NNN.NNN.    +++.
-.+++        EEE.III.    KKK.    NNN.NNN.    .+++
-+++.        EEE.    III.KKK.KKK.NNN.        +++.
-.+++        EEE.    III.KKK.KKK.NNN.        .+++
-+++.                                        +++.
-.+++                                        .+++
-+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
-.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++
+DDD.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
+.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.NNN.KKK.AAA.NNN
+DDD.                                        EEE.
+.NNN                                        .III
+NNN.        DDD.    NNN.    NNN.    AAA.    KKK.
+.AAA        DDD.    NNN.    NNN.    AAA.    .NNN
+DDD.    DDD.    NNN.    NNN.    AAA.        EEE.
+.NNN    DDD.    NNN.    NNN.    AAA.        .III
+NNN.        DDD.NNN.NNN.NNN.NNN.            KKK.
+.AAA        DDD.NNN.NNN.NNN.NNN.            .NNN
+DDD.            NNN.    NNN.        AAA.    EEE.
+.NNN            NNN.    NNN.        AAA.    .III
+NNN.        EEE.    III.    KKK.    NNN.    KKK.
+.AAA        EEE.    III.    KKK.    NNN.    .NNN
+DDD.    EEE.    III.    KKK.    NNN.        EEE.
+.NNN    EEE.    III.    KKK.    NNN.        .III
+NNN.        EEE.III.    KKK.    NNN.NNN.    KKK.
+.AAA        EEE.III.    KKK.    NNN.NNN.    .NNN
+DDD.        EEE.    III.KKK.KKK.NNN.        EEE.
+.NNN        EEE.    III.KKK.KKK.NNN.        .III
+NNN.                                        KKK.
+.AAA                                        .NNN
+DDD.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
+.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.NNN.KKK.AAA.NNN

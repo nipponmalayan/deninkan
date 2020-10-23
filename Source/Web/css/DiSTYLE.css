@@ -1,43 +1,39 @@
-/*+.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
-.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++
-+++.                                        +++.
-.+++                                        .+++
-+++.        DDD.    NNN.    NNN.    AAA.    +++.
-.+++        DDD.    NNN.    NNN.    AAA.    .+++
-+++.    DDD.    NNN.    NNN.    AAA.        +++.
-.+++    DDD.    NNN.    NNN.    AAA.        .+++
-+++.        DDD.NNN.NNN.NNN.NNN.            +++.
-.+++        DDD.NNN.NNN.NNN.NNN.            .+++
-+++.            NNN.    NNN.        AAA.    +++.
-.+++            NNN.    NNN.        AAA.    .+++
-+++.        EEE.    III.    KKK.    NNN.    +++.
-.+++        EEE.    III.    KKK.    NNN.    .+++
-+++.    EEE.    III.    KKK.    NNN.        +++.
-.+++    EEE.    III.    KKK.    NNN.        .+++
-+++.        EEE.III.    KKK.    NNN.NNN.    +++.
-.+++        EEE.III.    KKK.    NNN.NNN.    .+++
-+++.        EEE.    III.KKK.KKK.NNN.        +++.
-.+++        EEE.    III.KKK.KKK.NNN.        .+++
-+++.                                        +++.
-.+++                                        .+++
-+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.
-.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+++.+*/
+/*D.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
+.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.NNN.KKK.AAA.NNN
+DDD.                                        EEE.
+.NNN                                        .III
+NNN.        DDD.    NNN.    NNN.    AAA.    KKK.
+.AAA        DDD.    NNN.    NNN.    AAA.    .NNN
+DDD.    DDD.    NNN.    NNN.    AAA.        EEE.
+.NNN    DDD.    NNN.    NNN.    AAA.        .III
+NNN.        DDD.NNN.NNN.NNN.NNN.            KKK.
+.AAA        DDD.NNN.NNN.NNN.NNN.            .NNN
+DDD.            NNN.    NNN.        AAA.    EEE.
+.NNN            NNN.    NNN.        AAA.    .III
+NNN.        EEE.    III.    KKK.    NNN.    KKK.
+.AAA        EEE.    III.    KKK.    NNN.    .NNN
+DDD.    EEE.    III.    KKK.    NNN.        EEE.
+.NNN    EEE.    III.    KKK.    NNN.        .III
+NNN.        EEE.III.    KKK.    NNN.NNN.    KKK.
+.AAA        EEE.III.    KKK.    NNN.NNN.    .NNN
+DDD.        EEE.    III.KKK.KKK.NNN.        EEE.
+.NNN        EEE.    III.KKK.KKK.NNN.        .III
+NNN.                                        KKK.
+.AAA                                        .NNN
+DDD.EEE.NNN.III.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.
+.NNN.KKK.AAA.NNN.DDD.EEE.NNN.III.NNN.KKK.AAA.N*/
 
 /* Licensed under the EUPL-1.2-or-later */
 
-/* deninkan colour palette */
-:root {
-  --DiRED: #eb1941;
-  --DiPINK: #f06987;
-  --DiGRAY: #c8c8c8;
-  --DiPALE: #fafafa;
-}
+/* ==========================================================================
+   General Styling
+   ========================================================================== */
 
 * {
   box-sizing: border-box;
 
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -47,6 +43,41 @@ body {
 section {
   padding: 64px;
 }
+
+/* Deninkan colour palette
+   ========================================================================== */
+
+:root {
+  --DiRED: #eb1941;
+  --DiPINK: #f06987;
+  --DiGRAY: #c8c8c8;
+  --DiPALE: #fafafa;
+}
+
+/* Content layout types
+   ========================================================================== */
+
+.DiBG-FULL {
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.DiBG-FULL_content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  padding: 64px 10%;
+
+  height: calc(100vh - 128px);
+}
+
+/* Buttons
+   ========================================================================== */
 
 button {
   background: none;
@@ -82,6 +113,9 @@ button:active {
   text-decoration: line-through;
   transition: 0.3s ease-in-out;
 }
+
+/* Inputs
+   ========================================================================== */
 
 input,
 input::placeholder {
@@ -151,6 +185,9 @@ label.css-label {
   -webkit-user-select: none;
 }
 
+/* Hyperlinks
+   ========================================================================== */
+
 li,
 a {
   color: var(--DiRED);
@@ -174,6 +211,9 @@ a:active {
   text-decoration: line-through;
   transition: 0.3s ease-in-out;
 }
+
+/* Text
+   ========================================================================== */
 
 h1 {
   color: var(--DiRED);
@@ -233,6 +273,9 @@ p {
   font-weight: 400;
 }
 
+/* Text types
+   ========================================================================== */
+
 .headline {
   transform: translateY(-64px);
 
@@ -255,7 +298,36 @@ p {
   width: 100%;
 }
 
-/* twemoji */
+/* Loading screen
+   ========================================================================== */
+
+.DiLOAD_background {
+  background-color: white;
+  position: fixed;
+  z-index: 6;
+
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.DiLOAD_animation {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+
+  top: 50%;
+  left: 50%;
+}
+
+.DiLOAD_animation img {
+  z-index: 10;
+}
+
+/* Twemoji
+   ========================================================================== */
+
 img.emoji {
   background: none !important;
   border: none !important;
@@ -270,7 +342,10 @@ img.emoji {
   width: 1.25em !important;
 }
 
-/* DiHEAD */
+/* ==========================================================================
+   Header styling
+   ========================================================================== */
+
 header {
   display: flex;
   align-items: center;
@@ -333,8 +408,8 @@ h6.DiHEAD_link:active {
     transition: 0.3s ease-in-out;
     z-index: -2;
 
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 
     height: 100%;
     width: 100%;
@@ -343,7 +418,7 @@ h6.DiHEAD_link:active {
   .DiHEAD_links li {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   h6.DiHEAD_link {
@@ -412,7 +487,10 @@ h6.DiHEAD_link:active {
   }
 }
 
-/* DiFOOT */
+/* ==========================================================================
+   Footer styling
+   ========================================================================== */
+
 footer {
   background-color: black;
   display: flex;
@@ -491,21 +569,26 @@ footer {
   }
 }
 
-.DiBG-FULL {
-  background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* ==========================================================================
+   Form styling
+   ========================================================================== */
 
-  height: 100vh;
+/* Sign up / sign in form
+   ========================================================================== */
+
+.DiFORM_sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 256px;
 }
 
-.DiBG-FULL_content {
-  align-items: center;
+.DiFORM_sign input {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
 
-  padding: 64px 10%;
-
-  height: calc(100vh - 128px);
+.DiFORM_sign button {
+  float: right;
 }
